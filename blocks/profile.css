@@ -18,6 +18,7 @@
 .profile__name {
   margin: 0;
   font-size: 32px;
+  font-weight: 500;
   line-height: 1;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -30,6 +31,7 @@
 
 .profile__description {
   margin: 0;
+  font-weight: 500;
   padding-top: 12px;
   font-size: 16px;
   line-height: 1;
@@ -44,6 +46,7 @@
 }
 
 .profile__edit-button {
+  font-weight: 500;
   margin-top: auto;
   border: none;
   background-color: transparent;
@@ -61,6 +64,7 @@
   transition: 0.3s ease-in;
 }
 .profile__add-button {
+  font-weight: 500;
   margin-left: auto;
   margin-top: auto;
   width: 149px;

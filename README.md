@@ -17,4 +17,4 @@ For the website layout, I utilized Figma. I added buttons with hover states, tex
 
 ## Deployment
 
-Link to Project - https://adelapaz33.github.io/se_project_spots/
+[Link to Project](https://adelapaz33.github.io/se_project_spots/)

@@ -18,3 +18,7 @@ For the website layout, I utilized Figma. I added buttons with hover states, tex
 ## Deployment
 
 [Link to Project](https://adelapaz33.github.io/se_project_spots/)
+
+## Video about Sprint 3
+
+[link to video](https://drive.google.com/file/d/1MXvQG5_aNviVvz5W8mrHEFG-U1scDttD/view?usp=drive_link)

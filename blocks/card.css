@@ -4,6 +4,7 @@
   object-fit: cover;
   border-radius: 8px;
   display: block;
+  margin-bottom: 12px;
 }
 
 .card__content {
@@ -54,7 +55,6 @@
   .card__image {
     height: 288px;
     width: 288px;
-    margin-bottom: 12px;
   }
 
   .card__title {

@@ -80,14 +80,14 @@ function getCardElement(data) {
     openModal(previewModal);
     previewModalImage.src = data.link;
     previewModalCaption.textContent = data.name;
-    cardImageEl.alt = data.name;
-
-    previewModalCloseBtn.addEventListener("click", () => {
-      closeModal(previewModal);
-    });
+    previewModalImage.alt = data.name;
   });
 
   cardDeleteButton.addEventListener("click", handleDeleteCard);
+
+  previewModalCloseBtn.addEventListener("click", () => {
+    closeModal(previewModal);
+  });
 
   cardLikeButton.addEventListener("click", () => {
     cardLikeButton.classList.toggle("card__like-button_liked");
@@ -123,6 +123,7 @@ function handleCardFormSubmit(evt) {
   };
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
+  cardForm.reset();
   closeModal(cardModal);
 }
 

@@ -31,6 +31,10 @@
   max-width: 420px;
 }
 
+.profile__name:hover {
+  cursor: pointer;
+}
+
 .profile__description {
   margin: 0;
   font-weight: 500;
@@ -45,6 +49,10 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+}
+
+.profile__description:hover {
+  cursor: pointer;
 }
 
 .profile__edit-button {
@@ -65,6 +73,7 @@
 .profile__edit-button:hover {
   opacity: 1;
   transition: 0.3s ease-in;
+  cursor: pointer;
 }
 .profile__add-button {
   font-weight: 500;
@@ -87,6 +96,7 @@
 .profile__add-button:hover {
   opacity: 0.8;
   transition: 0.3s ease-in;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {

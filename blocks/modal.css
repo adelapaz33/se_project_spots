@@ -164,4 +164,10 @@
   .modal__image {
     max-width: 288px;
   }
+
+  /* I believe this has fixed the issue! I believe I found a way to make it work without adding margin.   */
+
+  .modal__container {
+    max-width: 300px;
+  }
 }

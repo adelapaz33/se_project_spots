@@ -85,16 +85,16 @@ function getCardElement(data) {
 
   cardDeleteButton.addEventListener("click", handleDeleteCard);
 
-  previewModalCloseBtn.addEventListener("click", () => {
-    closeModal(previewModal);
-  });
-
   cardLikeButton.addEventListener("click", () => {
     cardLikeButton.classList.toggle("card__like-button_liked");
   });
 
   return cardElement;
 }
+
+previewModalCloseBtn.addEventListener("click", () => {
+  closeModal(previewModal);
+});
 
 function handleDeleteCard(evt) {
   evt.target.closest(".card").remove();

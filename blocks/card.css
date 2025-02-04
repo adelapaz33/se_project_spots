@@ -51,7 +51,7 @@
 }
 
 .card__like-button_liked {
-  background-image: url(../images/liked.svg);
+  background-image: url(../images/heart-real.svg);
   width: 22px;
   height: 20px;
   background-size: contain;

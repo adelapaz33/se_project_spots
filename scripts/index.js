@@ -97,6 +97,16 @@ previewModalCloseBtn.addEventListener("click", () => {
   closeModal(previewModal);
 });
 
+// Find all close buttons
+// const closeButtons = document.querySelectorAll(".modal__close-button");
+
+// closeButtons.forEach((button) => {
+// Find the closest popup only once
+// const popup = button.closest(".modal");
+// Set the listener
+//   button.addEventListener("click", () => closePopup(popup));
+// });
+
 function handleDeleteCard(evt) {
   evt.target.closest(".card").remove();
 }
@@ -174,9 +184,7 @@ function handleClickCloseModal(evt) {
 }
 
 function handleEscapeCloseModal(evt) {
-  modals.forEach((modal) => {
-    if (evt.key === "Escape") {
-      closeModal(modal);
-    }
-  });
+  if (evt.key === "Escape") {
+    modals.forEach(closeModal);
+  }
 }

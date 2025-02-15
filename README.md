@@ -1,4 +1,4 @@
-# Project 5: Spots - An image sharing site
+# Project 6: Spots - An image sharing site
 
 ## Description
 

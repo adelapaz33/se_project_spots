@@ -1,6 +1,3 @@
-
-
-
 const settings = {
   formSelector: ".modal__form",
   inputSelector: ".modal__input",
@@ -60,11 +57,11 @@ const disableButton = (buttonElement, config) => {
   buttonElement.classList.add(config.inactiveButtonClass);
 };
 
-// const resetValidation = (formElement, inputList) => {
-//   inputList.forEach((input) => {
-//     hideInputError(formElement, input);
-//   });
-// };
+const resetValidation = (formElement, inputList, config) => {
+  inputList.forEach((input) => {
+    hideInputError(formElement, input, config);
+  });
+};
 
 const setEventListeners = (formElement, config) => {
   const inputList = Array.from(

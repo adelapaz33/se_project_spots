@@ -183,8 +183,9 @@
 
   .modal__container {
     width: 100%;
-    height: 432px;
     padding: 12px;
+    display: flex;
+    flex-direction: column;
   }
   .modal__label {
     margin: 24px 0 8px;

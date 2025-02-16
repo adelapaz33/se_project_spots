@@ -3,7 +3,7 @@ const settings = {
   inputSelector: ".modal__input",
   submitButtonSelector: ".modal__save-button",
   inactiveButtonClass: "modal__save-button_inactive",
-  inputErrorClass: "modal__input_type_error",
+  inputErrorClass: ".modal__input_type_error",
   errorClass: "modal__error_visible",
 };
 
@@ -20,7 +20,6 @@ const hideInputError = (formElement, inputElement, config) => {
     `#${inputElement.id}-error`
   );
   inputElement.classList.remove(config.inputErrorClass);
-
   errorMessageElement.textContent = "";
 };
 

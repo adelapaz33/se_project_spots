@@ -62,6 +62,18 @@
   opacity: 1;
 }
 
+.modal__close-button_type_delete {
+  position: absolute;
+  top: 0px;
+  right: -50px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/close_delete_modal.svg);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
 .modal__title {
   font-size: 32px;
   line-height: 1;

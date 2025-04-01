@@ -1,6 +1,3 @@
-// close button style on delete modal
-// edit avatar style button in regular and media query
-
 import "./index.css";
 
 import {
@@ -97,7 +94,8 @@ const avatarInput = avatarModal.querySelector("#profile-avatar-image");
 const deleteModal = document.querySelector("#delete-modal");
 const deleteForm = deleteModal.querySelector(".modal__form-delete");
 const cancelButton = deleteModal.querySelector(".modal__button-cancel");
-const deleteModalCloseBtn = deleteModal.querySelector(".modal__close-button");
+const deleteModalCloseBtn = deleteModal.querySelector(".modal__close-button_type_delete");
+
 
 let selectedCard, selectedCardId;
 
@@ -159,10 +157,11 @@ function handleDeleteSubmit(evt) {
     .then(() => {
       selectedCard.remove();
       closeModal(deleteModal);
-      submitBtn.textContent = "Delete";
     })
-    .catch((err) => {});
-  
+    .catch(console.error)
+    .finally(() => {
+      submitBtn.textContent = "Delete";
+    });
 }
 function handleDeleteCard(cardElement, cardId) {
   selectedCard = cardElement;
@@ -226,6 +225,8 @@ function handleCardFormSubmit(evt) {
 
 function handleAvatarSubmit(evt) {
   evt.preventDefault();
+  const submitBtn = evt.submitter;
+  setButtonText(submitBtn, true);
   api
     .editAvatarInfo(avatarInput.value)
     .then((userData) => {
@@ -233,7 +234,10 @@ function handleAvatarSubmit(evt) {
       imageAvatar.src = userData.avatar;
       closeModal(avatarModal);
     })
-    .catch(console.error);
+    .catch(console.error)
+    .finally(() => {
+      setButtonText(submitBtn, false);
+    });
 }
 // Profile Section
 profileEditButton.addEventListener("click", () => {
